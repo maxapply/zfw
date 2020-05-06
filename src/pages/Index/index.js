@@ -98,6 +98,7 @@ class Index extends Component {
       )
     }
   }
+  // 66
 
   // 渲染轮播图
   renderSwiper = () => {
@@ -193,16 +194,6 @@ class Index extends Component {
     )
   }
 
-  // 获取最新资讯列表
-  getNew = async () => {
-    const res = await getNews()
-    if (res.status === 200) {
-      this.setState({
-        news: res.body,
-      })
-    }
-  }
-
   // 渲染最新资讯
   renderNews() {
     return this.state.news.map((item) => (
@@ -219,6 +210,15 @@ class Index extends Component {
         </Flex>
       </div>
     ))
+  }
+  // 获取最新资讯列表
+  getNew = async () => {
+    const res = await getNews()
+    if (res.status === 200) {
+      this.setState({
+        news: res.body,
+      })
+    }
   }
 
   // promise重构
