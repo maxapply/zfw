@@ -66,7 +66,7 @@ class Index extends Component {
           <SearchBar
             value={this.state.keyword}
             onChange={(v) => this.setState({ keyword: v })}
-            placeholder="请输入小区或地址"
+            placeholder="请输入小区或地址..."
           />
         </div>
         <div
