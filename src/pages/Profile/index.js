@@ -37,7 +37,7 @@ export default class Profile extends Component {
   }
   // 获取用户信息
   getUserInfo = async () => {
-    const { userInfo, isLogin } = this.state
+    const { isLogin } = this.state
     if (isLogin) {
       const { status, body } = await getUser(getToken())
       if (status === 200) {

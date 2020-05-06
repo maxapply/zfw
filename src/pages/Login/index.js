@@ -41,14 +41,7 @@ class Login extends Component {
   // }
 
   render() {
-    const {
-      values,
-      touched,
-      errors,
-      handleChange,
-      handleBlur,
-      handleSubmit,
-    } = this.props
+    const { values, errors, handleChange, handleSubmit } = this.props
     return (
       <div className={styles.root}>
         {/* 顶部导航 */}
